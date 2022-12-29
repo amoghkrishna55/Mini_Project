@@ -1,5 +1,4 @@
 import math
-
 def calculate(operator, operand1, operand2):
     if operator == '+':
         return operand1 + operand2
@@ -25,7 +24,6 @@ def calculate(operator, operand1, operand2):
         return math.degrees(operand1)
     elif operator == 'deg_to_rad':
         return math.radians(operand1)
-
 def main():
     while True:
         operator = input("Enter an operator (+, -, *, /, %, sqrt, exp, sin, cos, tan, rad_to_deg, deg_to_rad): ")
@@ -36,7 +34,6 @@ def main():
             operand2 = float(input("Enter the second operand: "))
         else:
             operand2 = None
-
         result = calculate(operator,operand1,operand2)
         print (result)
 main()
